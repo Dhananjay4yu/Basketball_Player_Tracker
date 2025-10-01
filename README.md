@@ -1,22 +1,82 @@
-Project Review: Basketball Player Detection
+# 🏀 Basketball Player Detection  
 
-Project Goal: Real-time object detection for identifying basketball players in video streams.
+Real-time **object detection system** to identify and track basketball players in video streams.  
+This project is a foundation for **advanced sports analytics**, leveraging deep learning to achieve **lightweight, fast, and accurate** detection.  
 
-Objective: To develop a lightweight, highly accurate object detection model capable of real-time tracking of basketball players, creating a foundation for advanced sports analytics.
-<img width="4240" height="485" alt="image" src="https://github.com/user-attachments/assets/5b1bed4a-cb80-4adb-9884-6e12abc0a798" />
+---
 
-Technical Methodology & Key Tools
-Core Technology: YOLOv5 (Ultralytics)
-I selected the YOLOv5 framework after testing YOLOv8 and YOLOv11 with multiple epoch values, YOLOv5 resulted in optimized balance of speed and accuracy, which is critical for smooth, real-time video inference.
-<img width="4970" height="300" alt="image" src="https://github.com/user-attachments/assets/69003781-047f-4519-9524-8a4815b0f546" />
+## 🎯 Project Goal  
+To develop a **real-time basketball player detection system** that balances **accuracy** and **speed**, making it suitable for live sports analytics applications.  
 
-<img width="1718" height="471" alt="image" src="https://github.com/user-attachments/assets/130173a5-7888-4d4d-a230-7ed619775514" />
+---
 
-Flow Chart<img width="604" height="159" alt="image" src="https://github.com/user-attachments/assets/db7506f8-2ff2-4f7d-aadb-d5977bfe8fe6" />
-<img width="1165" height="1125" alt="image" src="https://github.com/user-attachments/assets/7e39c9e7-0f6b-4fb1-a244-d94bc105f066" />
+## 📌 Objectives  
+- Detect and track basketball players in real-time.  
+- Build a **lightweight yet accurate** object detection pipeline.  
+- Lay the groundwork for future sports analytics (heatmaps, movement analysis, performance tracking).  
 
-Result<img width="397" height="159" alt="image" src="https://github.com/user-attachments/assets/d47a3eed-b0e7-4cb5-a7b5-4a2771abd4f7" />
-<img width="1705" height="226" alt="image" src="https://github.com/user-attachments/assets/a4962198-f2c6-4fe6-bb66-2e367e778b74" />
+---
 
-<img width="434" height="106" alt="image" src="https://github.com/user-attachments/assets/59f0f4b8-588a-46f5-9c37-740dd63fde22" />
-<img width="466" height="145" alt="image" src="https://github.com/user-attachments/assets/b70e2ac7-2180-4e58-9069-257234d31058" />
+## ⚙️ Technical Methodology & Tools  
+
+### 🧠 Core Technology  
+- **YOLOv5 (Ultralytics)**  
+- Benchmarked against **YOLOv8** and **YOLOv11** with varying epochs.  
+- YOLOv5 provided the **best trade-off** between **speed (FPS)** and **accuracy (mAP)**, making it ideal for real-time inference.  
+
+### 🛠️ Tools Used  
+- **Google Colab GPU** – Model training  
+- **Roboflow** – Dataset preparation and augmentation  
+- **Ultralytics YOLO** – Training & inference  
+- **OpenCV** – Video stream processing  
+
+---
+
+## 🔄 Workflow  
+
+### Flowchart  
+<img width="600" alt="Flowchart" src="https://github.com/user-attachments/assets/db7506f8-2ff2-4f7d-aadb-d5977bfe8fe6" />  
+
+---
+
+## 📊 Model Training  
+
+- Dataset prepared with **Roboflow**.  
+- Trained on **Google Colab (GPU)**.  
+- Generated optimized weights (`best.pt`).  
+- Evaluated across different YOLO versions & epochs for performance.  
+
+<img width="500" alt="training" src="https://github.com/user-attachments/assets/69003781-047f-4519-9524-8a4815b0f546" />  
+
+<img width="1700" alt="graph" src="https://github.com/user-attachments/assets/130173a5-7888-4d4d-a230-7ed619775514" />  
+
+---
+
+## ✅ Results  
+
+- Successfully achieved **real-time detection** with smooth tracking.  
+- Optimized YOLOv5 weights used for final inference.  
+
+<img width="400" alt="result1" src="https://github.com/user-attachments/assets/d47a3eed-b0e7-4cb5-a7b5-4a2771abd4f7" />  
+
+<img width="1700" alt="result2" src="https://github.com/user-attachments/assets/a4962198-f2c6-4fe6-bb66-2e367e778b74" />  
+
+<img width="450" alt="result3" src="https://github.com/user-attachments/assets/59f0f4b8-588a-46f5-9c37-740dd63fde22" />  
+
+<img width="460" alt="result4" src="https://github.com/user-attachments/assets/b70e2ac7-2180-4e58-9069-257234d31058" />  
+
+---
+
+## 📌 Future Scope  
+- Player movement heatmaps.  
+- Individual performance metrics.  
+- Integration with **sports analytics dashboards**.  
+
+---
+
+## 🚀 How to Run  
+
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/Dhananjay4yu/Basketball_Player_Tracker.git
+   cd Basketball_Player_Tracker
